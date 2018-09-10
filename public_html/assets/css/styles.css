@@ -1,0 +1,271 @@
+/* Resets */
+* {
+    margin: 0; 
+    padding: 0;
+}
+html, body{
+   
+}
+/*img { -ms-interpolation-mode: bicubic; }*/
+
+
+/* For modern browsers */
+.cf:before,
+.cf:after {
+    content:"";
+    display:table;
+}
+
+.cf:after {
+    clear:both;
+}
+
+/* For IE 6/7 (trigger hasLayout) */
+.cf {
+    zoom:1;
+}
+/*************** DEFINITION DER GRUNDELEMENTE ********************/
+body {
+    background: #e6e6e6 url(img/paper-bg.jpg) left top repeat fixed;	
+    color: #333;
+    font-family: myriad-pro-condensed, sans-serif;
+    /*font-size: 93.75%;*/
+    font-size:100%;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    font-family: myriad-pro-condensed, sans-serif;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: normal;
+    margin: 0 0 1rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: normal;    
+}
+a{
+    color:white;
+}
+header {
+    background:#f5db9e;
+    color: #483939;    
+}
+embed, object, video, iframe{
+    max-width:100%;
+}
+#headerMainTagline{
+    font-size:2rem;        
+}
+
+.subContent h2,
+.subContent h3 {
+    font-family: myriad-pro, sans-serif;
+    font-weight: bold;
+} 
+
+.subContent h2 {
+    font-size: 1.2rem;
+    margin: 1rem 0 0;
+}
+
+.subContent h3 {
+    color: #333;
+    font-size: 1rem;
+    margin: 1rem 0 0;
+}
+
+p {
+    margin: 0 0 1rem;
+}
+
+ul {
+    margin-left: .2rem;
+    list-style:none;
+    
+}
+ul li{
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    background:#ce7d16;
+    color: darkgray;
+    box-shadow: 0 0 4px black;    
+    text-align: center;
+    font-size: 1.8rem;
+}
+ul li a{
+    text-decoration:none;
+}
+ul li:hover {
+    background: lightslategray;
+    color:darkgreen;
+    transition: all .3s ease-in-out;
+}
+
+.wrapper {
+    background: #e6e6e6;
+    border: 1px solid #ccc; 
+    border-bottom: none;
+    margin: 48px auto 0;		
+    max-width: 1080px;
+    width:90%;
+    box-shadow: 0 0 10px whitesmoke;
+}
+#imprDsv{
+    width:100%;
+    margin:3% 0 0 0;
+}
+article {
+
+}
+
+.mainContent {
+    background: #fff;
+    float: left;
+    padding: 48px 5%;
+    width:90%;
+}
+.subContent{
+    float: left;
+    padding: 48px 3%;    
+}
+footer {
+    background: #d28f11;
+    color: #fff;
+    clear: both;
+    padding: 15px 60px 1px;
+}
+
+
+/****************DEFINITION DER EINZELNEN ELEMENTE*********************/
+/****HEADER****/
+#logo{    
+    background:url('../images/logo.png') no-repeat;    
+    background-size:100% auto;
+    width:30;     
+    padding:0 0 30% 0;    
+    margin:5% 35%;
+    
+}
+#headerMainTagline, #imprDsv{
+    width:100%;
+}
+.headerSubTagline {
+    float:  right;
+    font-size: 1.2rem;
+    font-style: italic;
+    line-height: 1.4;  
+    margin: 0 5%;
+}
+#aImpressum, #aDatenschutz{
+    float:left;
+    margin:0 2%;
+}
+#aImpressum:hover, #aDatenschutz:hover{
+    color:darkgreen;
+}
+#aDatenschutz{
+    float:right;
+}
+#imprDsv a{
+    color: #000;
+    text-decoration: none;
+}
+/************MAIN-SITE*************/
+nav{
+    width:100%;
+}
+#navi nav ul li{
+    float:left;
+    width:100%;
+    display:inline;
+}
+#bottom{
+    width:100%;
+    margin:0;
+}
+#contactInfos article{
+    border:1px solid blue;
+    background:green;
+    
+}
+#bottom #news ul li, #contactInfos article{
+    width:49.5%;
+    padding:0 0 50% 0;
+    float:left;
+}
+#news ul li nth-of-type(2){
+    background:blue;
+} 
+#picMain{
+    background:url('../images/Rainer_DoeringKanzlei.png') no-repeat;
+    background-size:100% auto;
+    width:80%;
+    padding:0 0 80% 0;
+    margin:2% 10%;
+}
+#headerMainTag{
+    font-size: 2.3rem;
+    /*text-shadow:0 0 5px darkblue;*/
+    text-align:center;
+}
+
+#headlineMainsite{
+    text-align:center;
+    font-size:1.7rem;
+}
+#headerMainTagline{
+    font-size:3rem;        
+}
+#subtitleMainsite{
+    font-size:120%;
+    text-align:center;
+}
+/****************navi und bottom****************/
+.portrait {
+    border: 1px solid #ccc;
+    height:auto;
+    max-width: 100%;
+
+}
+#article1Kanzlei, #articleDatenschutz, #hauptfeld{
+    padding:0 2%;
+    background:whitesmoke;
+}
+#hauptfeld{
+    padding:3% 4%;
+}
+#article1Kanzlei a{
+      color: #070e6d;      
+}
+#startTextKanzlei, #startTextKontakt{    
+    text-align: center;
+}
+/*Test background-size (bgs) */
+
+/* Beispiel 1
+header {
+        background: #078577 url(img/test-bgs.png) 50% 50% no-repeat; 
+        background-size: auto 100%;
+}*/
+
+/* Beispiel 2
+header {
+        background-size: 100% 100%;
+}
+
+ Beispiel 3
+header {
+        background-size: cover;
+}
+
+ Beispiel 4
+header {
+        background-size: contain;
+}*/
